@@ -1,10 +1,8 @@
 #!/usr/bin/env python
-import uuid
 import sys
+import uuid
 
 import click
-
-from jobcoin import jobcoin
 
 
 @click.command()
@@ -23,7 +21,7 @@ def main(args=None):
         click.echo(
             '\nYou may now send Jobcoins to address {deposit_address}. They '
             'will be mixed and sent to your destination addresses.\n'
-              .format(deposit_address=deposit_address))
+                .format(deposit_address=deposit_address))
 
 
 if __name__ == '__main__':
